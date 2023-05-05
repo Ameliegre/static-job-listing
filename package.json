@@ -1,6 +1,6 @@
 {
-  "name": "static-job-listing2",
-  "homepage": "https://ameliegre.github.io/static-job-listing2/",
+  "name": "static-job-listing",
+  "homepage": "https://ameliegre.github.io/static-job-listing/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

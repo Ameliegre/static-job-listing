@@ -14,11 +14,29 @@ const SearchBarWrapper = styled.section `
     justify-content: space-between;
     padding: 0 36px;
     position: relative;
+    animation: slideup 1s forwards ease-out;
     @media (max-width: 375px) {
       margin-top: -98px;
       padding: 0 16px;
       height: auto;
     }
+    @keyframes slideup {
+      0% {
+         transform: translateY(20px);
+         opacity: 0;
+      }
+   
+      80%{
+         transform: translateY(5px);
+         opacity: 0.8;
+      }
+   
+      100% {
+         transform: translateY(0px);
+         opacity:1;
+      }
+   }
+
 `
 
 const SelectWord = styled.div`

@@ -4,7 +4,7 @@ import profilList from './data.json'
 import { useState } from 'react'
 
 const JobWrapper = styled.section `
-  margin: 6% 10%;
+  margin: 7% 10%;
   @media (max-width: 375px) {
    width: auto;
    margin: 20% 6%;
@@ -23,10 +23,31 @@ const ListWrapper = styled.li`
  padding: 20px 0;
  box-shadow: 2px 7px 17px 0px rgb(191, 235, 235);
  border-radius: 5px;
+ animation: show 1s ease-out;
  @media (max-width: 375px) {
   flex-direction: column;
   padding: 20px 15px;
   margin-top: 45px;
+}
+@keyframes show {
+   0% {
+      opacity: 0;
+   }
+
+   30% {
+      opacity: 0.3; 
+   }
+   50% {
+      opacity: 0.5;
+   }
+
+   80%{
+      opacity: 0.8;
+   }
+
+   100% {
+      opacity:1;
+   }
 }
 `
 
