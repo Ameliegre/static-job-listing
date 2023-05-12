@@ -4,7 +4,7 @@ import profilList from './data.json'
 import { useState } from 'react'
 
 const JobWrapper = styled.section `
-  margin: 7% 10%;
+  margin: 7% 6%;
   @media (max-width: 375px) {
    width: auto;
    margin: 20% 6%;
