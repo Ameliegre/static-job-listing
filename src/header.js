@@ -16,7 +16,7 @@ function Header() {
     return (
       <HeaderWrapper>
         <picture>
-          <source srcSet={mobileBg} media="(max-width: 375px)"/>
+          <source srcSet={mobileBg} media="(max-width: 425px)"/>
           <source srcSet={desktopBg}/>
           <ImgStyle src={desktopBg} alt='background'></ImgStyle>
         </picture>

@@ -5,9 +5,13 @@ import { useState } from 'react'
 
 const JobWrapper = styled.section `
   margin: 7% 6%;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
    width: auto;
    margin: 20% 6%;
+  }
+  @media (min-width: 700px) {
+    width: auto;
+   margin: 10% 6%;
   }
 `
 
@@ -24,7 +28,7 @@ const ListWrapper = styled.li`
  box-shadow: 2px 7px 17px 0px rgb(191, 235, 235);
  border-radius: 5px;
  animation: show 1s ease-out;
- @media (max-width: 375px) {
+ @media (max-width: 700px) {
   flex-direction: column;
   padding: 20px 15px;
   margin-top: 45px;
@@ -56,7 +60,7 @@ const DevDetails = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding-left: 30px;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -67,7 +71,7 @@ const DevDetails = styled.div`
 const ImgStyle = styled.img`
   align-self: center;
   padding-right: 25px;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     height: 50px;
     margin-top: -46px;
     align-self: flex-start;
@@ -88,7 +92,7 @@ const CompanyTitle = styled.p`
   font-size: 16px;
   color: rgb(75, 155, 155);
   font-weight: 700;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     font-size: 14px;
   }
 
@@ -107,7 +111,7 @@ const NewStyled = styled.span`
   border-radius: 17px;
   padding: 7px 9px;
   font-weight: 700;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     font-size: 12px;
   }
 `
@@ -119,7 +123,7 @@ const FeaturedStyled = styled.span`
   padding: 7px 9px;
   margin-left: 10px;
   font-weight: 700;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     font-size: 12px;
   }
 `
@@ -127,7 +131,7 @@ const FeaturedStyled = styled.span`
 const PositionTitle = styled.h1`
   font-size: 20px;
   margin:0;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     font-size: 16px;
   }
 `
@@ -139,14 +143,14 @@ const ContractWrapper = styled.div`
   font-size: 15px;
   color: hsl(180, 8%, 52%);
   font-weight: 500;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     font-size: 12px;
     width: 70%;
   }
 `
 const Separation = styled.div`
   display: none;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     display: block;
     background-color: #969c9c;
     height: 1px;
@@ -160,8 +164,14 @@ const ButtonWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   align-content: flex-end;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  @media (min-width: 426px) and (max-width: 1000px){
+    align-content: unset;
+    flex-wrap: wrap;
+    margin-left:40px;
     row-gap: 10px;
   }
 `
@@ -180,7 +190,7 @@ const ButtonStyle = styled.button`
     color: #fff;
     background-color: rgb(75, 155, 155);
   }
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
    margin-right: 16px;
   }
 `

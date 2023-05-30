@@ -15,7 +15,7 @@ const SearchBarWrapper = styled.section `
     padding: 0 36px;
     position: relative;
     animation: slideup 1s forwards ease-out;
-    @media (max-width: 375px) {
+    @media (max-width: 700px) {
       margin-top: -98px;
       padding: 0 16px;
       height: auto;
@@ -45,7 +45,7 @@ const SelectWord = styled.div`
   margin-right: 10px;
   display: flex;
   flex-direction: row;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     flex-wrap: wrap;
   }
 `
@@ -60,7 +60,7 @@ const WordArray = styled.div`
   padding-left: 10px;
   column-gap: 12px;
   border-radius: 2px;
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     margin: 10px 15px 10px 0;
    
   }
